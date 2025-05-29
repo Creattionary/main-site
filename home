@@ -5,3 +5,38 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/Creattionary/main-site.git
 git push -u origin main
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bennett Littlejohn</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discography.html">Full Discography</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <h1>BENNETT LITTLEJOHN //</h1>
+  </header>
+
+  <main>
+    <section class="project">
+      <img src="images/project1.jpg" alt="Project 1 Cover" />
+      <h2>HOVVDY & RUNO PLUM - "SHOOTING STAR"</h2>
+    </section>
+    <!-- Repeat for other projects -->
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Bennett Littlejohn</p>
+  </footer>
+</body>
+</html>
