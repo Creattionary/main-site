@@ -1,94 +1,38 @@
-echo "# main-site" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/Creattionary/main-site.git
-git push -u origin main
+import { InfiniteSlider } from '@/components/core/infinite-slider';
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bennett Littlejohn</title>
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="discography.html">Full Discography</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <h1>BENNETT LITTLEJOHN //</h1>
-  </header>
-
-  <main>
-    <section class="project">
-      <img src="images/project1.jpg" alt="Project 1 Cover" />
-      <h2>HOVVDY & RUNO PLUM - "SHOOTING STAR"</h2>
-    </section>
-    <!-- Repeat for other projects -->
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Bennett Littlejohn</p>
-  </footer>
-</body>
-</html>
-
-/* Reset and base styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Helvetica Neue', sans-serif;
-  background-color: #fff;
-  color: #000;
-  line-height: 1.6;
-}
-
-header {
-  text-align: center;
-  padding: 2rem 0;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-bottom: 1rem;
-}
-
-nav a {
-  text-decoration: none;
-  color: #000;
-  font-weight: bold;
-}
-
-main {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  padding: 2rem;
-}
-
-.project img {
-  width: 100%;
-  height: auto;
-}
-
-footer {
-  text-align: center;
-  padding: 1rem 0;
-  background-color: #f4f4f4;
-  margin-top: 2rem;
+export function InfiniteSliderHoverSpeed() {
+  return (
+    <InfiniteSlider speedOnHover={20} gap={24}>
+      <img
+        src='https://i.scdn.co/image/ab67616d00001e02ad24c5e36ddcd1957ad35677'
+        alt='Dean blunt - Black Metal 2'
+        className='aspect-square w-[120px] rounded-[4px]'
+      />
+      <img
+        src='https://i.scdn.co/image/ab67616d00001e02af73f776b92d4614152fb141'
+        alt='Jungle Jack - JUNGLE DES ILLUSIONS VOL 2'
+        className='aspect-square w-[120px] rounded-[4px]'
+      />
+      <img
+        src='https://i.scdn.co/image/ab67616d00001e02ecdb8f824367a53468100faf'
+        alt='Yung Lean - Stardust'
+        className='aspect-square w-[120px] rounded-[4px]'
+      />
+      <img
+        src='https://i.scdn.co/image/ab67616d00001e021624590458126fc8b8c64c2f'
+        alt='Lana Del Rey - Ultraviolence'
+        className='aspect-square w-[120px] rounded-[4px]'
+      />
+      <img
+        src='https://i.scdn.co/image/ab67616d00001e020dcf0f3680cff56fe5ff2288'
+        alt='A$AP Rocky - Tailor Swif'
+        className='aspect-square w-[120px] rounded-[4px]'
+      />
+      <img
+        src='https://i.scdn.co/image/ab67616d00001e02bc1028b7e9cd2b17c770a520'
+        alt='Midnight Miami (feat Konvy) - Nino Paid, Konvy'
+        className='aspect-square w-[120px] rounded-[4px]'
+      />
+    </InfiniteSlider>
+  );
 }
