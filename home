@@ -1,5 +1,1 @@
-npm create vite@latest my-site -- --template vanilla
-cd my-site
-npm install
-npm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p
+
